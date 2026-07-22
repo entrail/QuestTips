@@ -1,0 +1,5 @@
+package-as: QuestTips
+
+ignore:
+    - README.md
+    - tools

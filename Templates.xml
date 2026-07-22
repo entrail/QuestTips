@@ -1,0 +1,15 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <!-- Plain text row for the settings list (About section). Own template
+         name = own frame pool, so the restyled Title cannot leak onto
+         Blizzard's normal section headers. -->
+    <Frame name="QuestTipsSettingsTextTemplate" inherits="SettingsListSectionHeaderTemplate" virtual="true">
+        <Size x="0" y="24"/>
+        <Scripts>
+            <OnLoad>
+                self.Title:ClearAllPoints();
+                self.Title:SetPoint("BOTTOMLEFT", 16, 4);
+                self.Title:SetFontObject("GameFontHighlight");
+            </OnLoad>
+        </Scripts>
+    </Frame>
+</Ui>
