@@ -2,7 +2,7 @@
 ## Title: QuestTips
 ## Notes: Quest item tooltips: which quests need an item you can get without the quest - save it, hand it in, or sell it.
 ## Author: Entrail09
-## Version: 0.2.0
+## Version: 0.2.1
 ## SavedVariables: QuestTipsDB
 
 Core.lua
