@@ -1,0 +1,53 @@
+local ADDON_NAME, ns = ...
+if GetLocale() ~= "ruRU" then return end
+local L = ns.L
+
+-- Quest lines on item tooltips
+L["done"] = "выполнено"
+L["level %d"] = "%d-й ур."
+L["missing profession"] = "нет профессии"
+L["more quests"] = "заданий"
+L["Needed for %d quests"] = "Требуется для заданий: %d"
+L["Needed for 1 quest"] = "Требуется для 1 задания"
+L["Quest"] = "Задание"
+L["repeatable"] = "повторяемое"
+
+-- Deletable leftovers: quest-bound, starter and quest-provided items
+L["%s is no longer needed - every quest that needed it is completed."] = "%s: этот предмет больше не нужен — все задания, где он требовался, выполнены."
+L["%s is not needed by any quest in your log anymore."] = "%s: этот предмет больше не нужен ни одному заданию в вашем журнале."
+L["All %d quests completed - can be deleted"] = "Все задания выполнены (%d) — можно удалить"
+L["completed - can be deleted"] = "выполнено — можно удалить"
+L["Delete"] = "Удалить"
+L["Delete all (%d)"] = "Удалить все (%d)"
+L["Keep"] = "Оставить"
+L["Provided by quest"] = "Выдаётся заданием"
+L["Quest completed - can be deleted"] = "Задание выполнено — можно удалить"
+L["Starts quest"] = "Начинает задание"
+
+-- Options panel
+L["About"] = "Об аддоне"
+L["Already completed"] = "Уже выполнено"
+L["Also annotate quest items that are only obtained by gathering, fishing or crafting. Items that (also) drop from enemies are always annotated."] = "Также помечать предметы заданий, которые можно только собрать, выловить или создать. Предметы, выпадающие с противников, помечаются всегда."
+L["Always show"] = "Показывать всегда"
+L["Announce deletable leftovers after turn-ins and abandons"] = "Сообщать о ненужных остатках после сдачи и отмены заданий"
+L["Author: %s"] = "Автор: %s"
+L["Check deletable quest items"] = "Проверять удаляемые предметы заданий"
+L["Display"] = "Отображение"
+L["In my quest log"] = "В моём журнале заданий"
+L["Include gathered/fished/crafted items"] = "Включать собираемые, выловленные и создаваемые предметы"
+L["List each quest by name with the required count. Disabled, a single compact 'Needed for N quests' line is shown instead."] = "Перечислять задания по названию с нужным количеством. Если выключено, показывается одна короткая строка «Требуется для заданий: N»."
+L["Not done yet"] = "Ещё не выполнено"
+L["Only add the tooltip information while this modifier key is held down."] = "Добавлять сведения в подсказку только при удержании этой клавиши."
+L["Quest lines per item tooltip; more are summarized as '+N more quests'."] = "Сколько строк с заданиями показывать в подсказке предмета; остальные сворачиваются в «+N заданий»."
+L["Quest states"] = "Состояния заданий"
+L["Quest-bound items and leftover quest-starter items (maps, notes, ...) get a clear 'can be deleted' line once every quest that needs them is completed - or show which open quests still do."] = "Предметы, привязанные к заданию, и оставшиеся предметы, начинающие задание (карты, записки и т. п.), получают чёткую строку «можно удалить», когда выполнены все нужные им задания, — либо показывают, какие незавершённые задания их ещё требуют."
+L["Quests listed per item"] = "Заданий в подсказке предмета"
+L["Repeatable turn-ins"] = "Повторяемые задания"
+L["Show only while holding"] = "Показывать только при удержании"
+L["Show quest names"] = "Показывать названия заданий"
+L["Show quests currently in your quest log that need the item (with your have/need count)."] = "Показывать задания из вашего журнала, которым нужен этот предмет (с количеством «есть/нужно»)."
+L["Show quests you have already completed. You no longer need the item, but it may still sell on the auction house."] = "Показывать уже выполненные вами задания. Предмет вам больше не нужен, но его ещё можно продать на аукционе."
+L["Show quests you have neither in the log nor completed - you might need the item later, and others need it too."] = "Показывать задания, которых нет ни в журнале, ни среди выполненных: предмет может понадобиться вам позже, и он нужен другим игрокам."
+L["Show repeatable turn-in quests (reputation and event turn-ins). They can always be handed in again - permanent demand."] = "Показывать повторяемые задания (сдача предметов за репутацию и на праздниках). Их можно сдавать снова и снова — постоянный спрос."
+L["Version: %s"] = "Версия: %s"
+L["When turning in or abandoning a quest leaves a now-deletable quest item in your bags, show a chat message and a small window with the item and a delete button."] = "Если после сдачи или отмены задания в сумках остаётся ненужный предмет задания, показывать сообщение в чате и небольшое окно с предметом и кнопкой удаления."
