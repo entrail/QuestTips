@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.1 (2026-08-19)
+
+- Fixed: the Lieutenant's Insignia (Hidden Enemies, Orgrimmar) was offered for
+  deletion right after handing the first quest in to Thrall, although the
+  follow-up quest hands it straight back and needs it in the bags for Neeru
+  Fireblade. The item is now linked to the follow-up quest as well, so the
+  deletion offer only comes once that quest is done.
+
 ## v0.3.0 (2026-08-16)
 
 - Russian (ruRU) translation: on a Russian client the quest lines in item

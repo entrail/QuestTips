@@ -5766,3 +5766,14 @@ qprov(21986, 9015) -- Banner of Provocation <- The Challenge
 qprov(21986, 9018) -- Banner of Provocation <- Anthion's Parting Words
 qprov(22432, 9051) -- Devilsaur Barb <- Toxic Test
 -- DATA_END
+
+-- Curated additions (hand-maintained; survive regeneration because they
+-- sit outside the DATA_START/DATA_END markers).
+--
+-- Quests that need an item IN THE BAGS while in the log without listing
+-- it as a turn-in objective (the server only knows it as the provided
+-- SrcItemId), so the generator cannot see the dependency. Without these
+-- lines the turn-in watcher offers to delete the item right after the
+-- previous quest is handed in - while the follow-up already handed out
+-- the copy the player still needs.
+add(5727, {[14544]=1}, "H", {lvl=12, zone=1637}) -- Hidden Enemies (Neeru Fireblade) <- Lieutenant's Insignia, provided by Thrall and shown to Neeru
